@@ -71,10 +71,11 @@ document.addEventListener('DOMContentLoaded', () => {
         dashboard.classList.add('show-block');
         logoutBtn.classList.remove('hidden');
         
-        // Set cookie
+        // Set cookies
         document.cookie = "treadgizmo_demo_login=TRUE; path=/; max-age=3600";
+        document.cookie = "demo_userid=demouser00123; path=/; max-age=3600";
         
-        console.log('User logged in successfully. Cookie set.');
+        console.log('User logged in successfully. Cookies set.');
     });
 
     // Refresh Data Logic
@@ -106,12 +107,13 @@ document.addEventListener('DOMContentLoaded', () => {
         productGrid.classList.remove('hidden');
         loginTrigger.classList.remove('hidden');
         
-        // Reset cookie
+        // Reset cookies
         document.cookie = "treadgizmo_demo_login=FALSE; path=/; max-age=3600";
+        document.cookie = "demo_userid=; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
         
         // Reset form
         loginForm.reset();
         
-        console.log('User logged out. Cookie updated.');
+        console.log('User logged out. Cookies updated.');
     });
 });
