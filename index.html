@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treadgizmos | Industrial Traction Solutions</title>
+    <meta name="description" content="Premium industrial traction hardware for heavy machinery and extreme environments.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav>
+            <div class="logo">
+                <i data-lucide="settings-2"></i>
+                <span>TREADGIZMOS</span>
+            </div>
+            <div class="nav-links">
+                <a href="#products">Products</a>
+                <a href="#engineering">Engineering</a>
+                <a href="#support">Support</a>
+                <button id="login-trigger" class="btn btn-outline">Client Login</button>
+                <button id="logout-btn" class="btn btn-outline hidden">Logout</button>
+                <button id="theme-toggle" class="btn btn-outline" style="padding: 0.5rem; display: flex; align-items: center; justify-content: center;">
+                    <i data-lucide="moon" style="width: 20px; height: 20px;"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <header id="hero" class="animate-fade-in">
+            <div class="hero-content">
+                <div class="badge" style="display: inline-block; padding: 0.25rem 0.75rem; background: rgba(249, 115, 22, 0.1); color: var(--safety-orange); border-radius: 9999px; font-size: 0.75rem; font-weight: 700; margin-bottom: 2rem; border: 1px solid rgba(249, 115, 22, 0.2);">ISO 9001:2015 CERTIFIED</div>
+                <h1>Traction Engineered for Extremes.</h1>
+                <p>Providing global industrial leaders with precision-grade hardware that never slips, even in the harshest terrestrial conditions.</p>
+                <div style="display: flex; gap: 1rem; justify-content: center; margin-bottom: 4rem;">
+                    <button class="btn btn-primary">View Technical Specs</button>
+                    <button class="btn btn-outline">Consult an Engineer</button>
+                </div>
+                
+                <!-- Trust Bar -->
+                <div class="trust-bar" style="border-top: 1px solid var(--border-color); padding-top: 3rem;">
+                    <p style="text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.75rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 2rem;">Trusted by industry leaders in 40+ countries</p>
+                    <div style="display: flex; gap: 4rem; justify-content: center; align-items: center; opacity: 0.6; filter: grayscale(1);">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; font-weight: 700;"><i data-lucide="cog" style="width: 20px;"></i> FORGE-MT</div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; font-weight: 700;"><i data-lucide="drill" style="width: 20px;"></i> ATLAS-GEO</div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; font-weight: 700;"><i data-lucide="cpu" style="width: 20px;"></i> ROBOTIC-LOG</div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; font-weight: 700;"><i data-lucide="container" style="width: 20px;"></i> GLOBAL-TRANS</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Product Grid -->
+        <section id="product-grid" class="animate-fade-in">
+            <div class="grid">
+                <div class="card">
+                    <div class="card-icon"><i data-lucide="shield"></i></div>
+                    <h3>Reinforced Tracks</h3>
+                    <p>High-tensile steel alloys designed for heavy excavation machinery and military-grade reliability.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i data-lucide="zap"></i></div>
+                    <h3>Magnetic Hubs</h3>
+                    <p>Proprietary electromagnetic locking systems for automated warehouse robotics and fulfillment systems.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i data-lucide="layers"></i></div>
+                    <h3>Modular Cleats</h3>
+                    <p>Quick-swap traction modules for variable terrain adaptability in agriculture and forestry.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dashboard Section (Hidden by Default) -->
+        <section id="dashboard" class="animate-fade-in">
+            <div class="profile-header">
+                <div class="profile-info">
+                    <div class="profile-avatar">
+                        <i data-lucide="user"></i>
+                    </div>
+                    <div>
+                        <div style="font-size: 1.125rem; font-weight: 700;">Mathias Kristensen</div>
+                        <div id="client-id" style="color: var(--text-secondary); font-size: 0.875rem;">Account: #TG-9421-B</div>
+                    </div>
+                </div>
+                <div style="text-align: right;">
+                    <div style="font-size: 0.75rem; color: var(--text-secondary); text-transform: uppercase; font-weight: 600;">Account Manager</div>
+                    <div style="font-weight: 600;">Sarah Jenkins</div>
+                </div>
+            </div>
+
+            <div class="dashboard-layout">
+                <!-- Sidebar -->
+                <aside class="sidebar">
+                    <nav class="sidebar-nav">
+                        <a href="#" class="sidebar-item active"><i data-lucide="layout-dashboard" style="width: 18px;"></i> Overview</a>
+                        <a href="#" class="sidebar-item"><i data-lucide="package" style="width: 18px;"></i> Inventory</a>
+                        <a href="#" class="sidebar-item"><i data-lucide="truck" style="width: 18px;"></i> Logistics</a>
+                        <a href="#" class="sidebar-item"><i data-lucide="file-text" style="width: 18px;"></i> Documents</a>
+                        <a href="#" class="sidebar-item"><i data-lucide="sliders" style="width: 18px;"></i> Settings</a>
+                    </nav>
+                </aside>
+
+                <!-- Main Section -->
+                <div class="dashboard-main">
+                    <div class="dashboard-header">
+                        <h2>Portal Overview</h2>
+                    </div>
+
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-label">Active Orders <span class="stat-trend trend-up">+2</span></div>
+                            <div class="stat-value">04</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-label">Stock Units <span class="stat-trend trend-down">-5%</span></div>
+                            <div class="stat-value">12,400</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-label">Next Maintenance</div>
+                            <div class="stat-value">12 May</div>
+                        </div>
+                    </div>
+
+                    <div class="shipping-header">
+                        <h3>Active Logistics</h3>
+                        <button id="track-shipment-btn" class="btn btn-outline" style="font-size: 0.875rem;">
+                            <span style="display: flex; align-items: center; gap: 0.5rem;">
+                                <i data-lucide="refresh-cw" style="width: 14px;"></i> Refresh Data
+                            </span>
+                        </button>
+                    </div>
+
+                    <div id="shipping-table" class="shipping-container">
+                        <div class="table-wrapper">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Order ID</th>
+                                        <th>Item</th>
+                                        <th>Quantity</th>
+                                        <th>Status</th>
+                                        <th>ETA</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>#TG-4021</td>
+                                        <td>Reinforced Tracks (HD)</td>
+                                        <td>500 units</td>
+                                        <td><span class="status-badge status-transit">In Transit</span></td>
+                                        <td>Tuesday, 14:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#TG-3998</td>
+                                        <td>Magnetic Hubs v2</td>
+                                        <td>1,200 units</td>
+                                        <td><span class="status-badge" style="background-color: rgba(34, 197, 94, 0.1); color: #22c55e;">Delivered</span></td>
+                                        <td>Completed</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Sidebar: Status & Updates -->
+                <aside class="dashboard-right">
+                    <div class="status-module">
+                        <h4 style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-secondary); margin-bottom: 1rem; font-weight: 700;">System Health</h4>
+                        <div class="status-item">
+                            <span style="font-size: 0.875rem;">Active Orders</span>
+                            <div class="status-indicator">
+                                <div class="dot pulse"></div>
+                                <span>OK</span>
+                            </div>
+                        </div>
+                        <div class="status-item">
+                            <span style="font-size: 0.875rem;">Scheduled Maint.</span>
+                            <div class="status-indicator">
+                                <div class="dot"></div>
+                                <span>SCHEDULED</span>
+                            </div>
+                        </div>
+                        <div class="status-item">
+                            <span style="font-size: 0.875rem;">Global Network</span>
+                            <div class="status-indicator">
+                                <div class="dot"></div>
+                                <span>OPTIMAL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="updates-module">
+                        <h4>Recommended for You</h4>
+                        <div class="update-card">
+                            <div style="color: var(--safety-orange); font-size: 0.75rem; font-weight: 700; margin-bottom: 0.25rem;">UPGRADE AVAILABLE</div>
+                            <h5>MagHub v3 Hardware</h5>
+                            <p>Enable 15% faster locking cycles on existing automated lines.</p>
+                        </div>
+                        <div class="update-card">
+                            <div style="color: #3b82f6; font-size: 0.75rem; font-weight: 700; margin-bottom: 0.25rem;">NEW PRODUCT</div>
+                            <h5>Arctic-Grade Cleats</h5>
+                            <p>Now certified for sub-zero extraction sites (-40°C).</p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal-overlay">
+        <div class="modal">
+            <h2>Client Login</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="username">Corporate Email</label>
+                    <input type="email" id="username" value="demo@treadgizmos.com" placeholder="name@company.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Security Key</label>
+                    <input type="password" id="password" value="tg-industrial-2026" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Access Portal</button>
+            </form>
+            <button id="close-modal" class="btn btn-outline" style="width: 100%; margin-top: 1rem;">Cancel</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
