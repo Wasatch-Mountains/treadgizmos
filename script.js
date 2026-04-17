@@ -78,9 +78,15 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('User logged in successfully. Cookies set.');
 
         // Trigger Qualtrics Intercept Reparsing (for SPA behavior)
+        // Using a 2s delay to ensure the dashboard DOM is fully rendered/stable
         if (typeof QSI !== 'undefined' && QSI.API) {
             QSI.API.load();
-            QSI.API.run();
+            setTimeout(() => {
+                // Re-check QSI in case it was modified/unloaded during the delay
+                if (typeof QSI !== 'undefined' && QSI.API) {
+                    QSI.API.run();
+                }
+            }, 2000);
         }
     });
 
