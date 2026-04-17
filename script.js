@@ -79,6 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Trigger Qualtrics Intercept Reparsing (for SPA behavior)
         if (typeof QSI !== 'undefined' && QSI.API) {
+            QSI.API.load();
             QSI.API.run();
         }
     });
