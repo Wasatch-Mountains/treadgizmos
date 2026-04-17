@@ -76,6 +76,11 @@ document.addEventListener('DOMContentLoaded', () => {
         document.cookie = "demo_userid=demouser00123; path=/; max-age=3600";
         
         console.log('User logged in successfully. Cookies set.');
+
+        // Trigger Qualtrics Intercept Reparsing (for SPA behavior)
+        if (typeof QSI !== 'undefined' && QSI.API) {
+            QSI.API.run();
+        }
     });
 
     // Refresh Data Logic
